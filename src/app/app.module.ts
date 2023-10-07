@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 
 import { MultiplicacionComponent } from './multiplicacion/multiplicacion/multiplicacion.component';
+import { BoletosComponent } from './Cinepolis/boletos/boletos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemperaturaComponent,
-    MultiplicacionComponent
+    MultiplicacionComponent,
+    BoletosComponent
   ],
   imports: [
     BrowserModule,
