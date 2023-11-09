@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <span>
+        <a mat-button routerLinkActive="active" routerLink="home">
+            <mat-icon>fact_check</mat-icon>
+            Practica Angular
+        </a>
+    </span>
+    <div>
+        <a mat-button routerLinkActive="active" routerLink="multiplicacion">Multiplicación</a>
+    </div>
+    <div>
+        <a mat-button routerLinkActive="active" routerLink="Temperatura">Temperatura</a>
+    </div>
+    <div>
+        <a mat-button routerLinkActive="active" routerLink="Cinepolis">Cinepolis</a>
+    </div>
+</mat-toolbar>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
