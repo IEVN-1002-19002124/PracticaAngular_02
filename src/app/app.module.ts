@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { FormDatosComponent } from './practia_final/form-datos/form-datos.component';
+import { ExamenComponent } from './practia_final/examen/examen.component';
+import { ResultadoComponent } from './practia_final/resultado/resultado.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { AppRoutingModule } from './app-routing.module';
     MultiplicacionComponent,
     BoletosComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    FormDatosComponent,
+    ExamenComponent,
+    ResultadoComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

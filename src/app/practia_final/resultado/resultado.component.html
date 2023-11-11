@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <h1>Resultados</h1>
+    
+    <div *ngIf="informacionUsuario">
+      <p><strong>Nombre:</strong> {{ informacionUsuario.nombre }} {{ informacionUsuario.apaterno }} {{ informacionUsuario.amaterno }}</p>
+      <p><strong>Edad:</strong> {{ calcularEdad(informacionUsuario.fecha) }} años</p>
+      <p><strong>Símbolo Zodiacal:</strong> {{ obtenerSignoZodiacal(informacionUsuario.fecha) }}</p>
+    </div>
+  
+    <div *ngIf="puntajeExamen !== undefined">
+      <h2>Puntaje del Examen: {{ puntajeExamen }} / 5</h2>
+    </div>
+  </div>

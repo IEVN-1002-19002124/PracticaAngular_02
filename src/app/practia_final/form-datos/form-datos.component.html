@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-3 mb-3">
+      <div class="border-bottom border-3 border-primary text-center">
+        <h5 class="fs-2 mt-2">Examen</h5>
+        <h5 class="fs-4 mt-5">Ingresa tus datos</h5>
+      </div>
+    </div>
+    <div class="col-4 mt-3 mb-3"></div>
+    <div class="col-4 mt-3 mb-3 border border-info card ">
+      <form (ngSubmit)="enviarFormulario()">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="nombreInput" [(ngModel)]="nombre" name="nombre" required>
+              <label for="nombreInput">Nombre</label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="apaternoInput" [(ngModel)]="apaterno" name="apaterno" required>
+              <label for="apaternoInput">Apellido paterno</label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="amaternoInput" [(ngModel)]="amaterno" name="amaterno" required>
+              <label for="amaternoInput">Apellido materno</label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-floating">
+              <input type="date" class="form-control" id="fechaInput" [(ngModel)]="fecha" name="fecha" required>
+              <label for="fechaInput">Fecha de nacimiento</label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <p class="fs-6">Sexo</p>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" [(ngModel)]="sexo" value="M">
+              <label class="btn btn-outline-secondary" for="btnradio1" style="width: 7rem;">Masculino</label>
+      
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" [(ngModel)]="sexo" value="F">
+              <label class="btn btn-outline-secondary" for="btnradio2" style="width: 7rem;">Femenino</label>
+            </div>
+          </li>
+        </ul>
+        <div class="card-footer">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-primary" style="width: 7rem;">Comenzar</button>
+            <button type="button" class="btn btn-danger" style="width: 7rem;">Limpiar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-4 mt-3 mb-3"></div>
+  </div>
+</div>
